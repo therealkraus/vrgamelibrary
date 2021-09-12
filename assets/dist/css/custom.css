@@ -16,17 +16,13 @@
     font-weight: bold;
 }
 
-.imagecontainer {
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    -webkit-box-shadow: 0px 0px 8px 0px #000000;
-    box-shadow: 0px 0px 8px 0px #000000;/*SUPPORT ALL BROSWERS*/
-}
-
 .picture {
     width: 100%;
+    transition: 1s ease;
+}
+
+.picture:hover {
+    transform: scale(1.25);
 }
 
 .card {
@@ -35,21 +31,32 @@
     padding: 0px;
 }
 
-.btn
-{
+.btn {
     padding: 0px;
+    border: none;
+    overflow: hidden;
+}
+
+.btn:focus {
+    -webkit-box-shadow: 0px 0px 8px 0px #000000;
+    box-shadow: 0px 0px 8px 0px #000000;
+    /*SUPPORT ALL BROSWERS*/
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0px 0px 8px 0px #000000;
+    box-shadow: 0px 0px 8px 0px #000000;
+}
+
+.modal-content {
+    background-color: transparent;
     border: none;
 }
 
-.btn:focus 
-{
-    -webkit-box-shadow: 0px 0px 8px 0px #000000;
-    box-shadow: 0px 0px 8px 0px #000000;/*SUPPORT ALL BROSWERS*/
+.modal-dialog {
+    max-width: 1280px;
 }
 
-.btn:hover
-{
-    -webkit-box-shadow:inset 0px 0px 0px 10px #f00;
-    -moz-box-shadow:inset 0px 0px 0px 10px #f00;
-    box-shadow:inset 0px 0px 0px 10px #f00;
+.navbar-bg-dark{
+    background-color: #121212!important;
 }
